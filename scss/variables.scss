@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans');
+
+
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+@mixin transition {
+	transition: all .3s ease;
+}
+
+@mixin btn {
+
+	@include transition;
+
+	&:hover {
+
+		@include transition;
+	}
+	&:focus {
+		outline:none;
+	}
+	&:active {
+
+	}
+}
+
+@mixin ref {
+	text-decoration: none;
+	@include transition;
+
+	&:hover {
+		text-decoration: none;
+		@include transition;
+	}
+}
