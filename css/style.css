@@ -21,12 +21,11 @@ body {
   .burger:focus {
     outline: none; }
 
-i[class^="ion-ios-"] {
-  font-size: 2.5rem; }
+.ios-icon {
+  width: 13%; }
 
-i[class^="ion-social-"] {
-  font-size: 1.3rem;
-  margin: 0 5px; }
+.social-icon {
+  margin: 0 7px; }
 
 .h-menu, .h-menu.collapsing {
   position: absolute;

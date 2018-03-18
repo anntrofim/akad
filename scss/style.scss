@@ -3,25 +3,27 @@
 
 body {
 	font-family: 'Open Sans', sans-serif;
-
 }
 
 .burger {
 	@include btn;
 }
 
-i[class^="ion-ios-"] {
-	font-size: 2.5rem;
+.ios-icon {
+	width: 13%;
 }
 
-i[class^="ion-social-"] {
-	font-size: 1.3rem;
-	margin: 0 5px;
+.social-icon {
+	margin: 0 7px;
 }
 
-.h-menu, .h-menu.collapsing{
-	position: absolute;
-	top: 50px;
-	right: 20px;
-}
+// @media screen and (min-width: 768px) {
+	.h-menu, .h-menu.collapsing{
+		position: absolute;
+		top: 50px;
+		right: 20px;
+	}
+// }
+
+
 
