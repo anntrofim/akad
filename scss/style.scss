@@ -1,12 +1,75 @@
-@import "variables.scss";
+@import "a_variables.scss";
 @import "_header.scss";
+@import "_newsletter.scss";
+@import "_name.scss";
+@import "_index.scss";
+@import "_about.scss";
 
+html{
+	font-size: 14px;
+}
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans', Arial sans-serif;
 }
 
-.burger {
+.montserrat {
+	font-family: 'Montserrat', Arial, sans-serif;
+}
+
+a {
+	@include ref;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Montserrat', Arial, sans-serif;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+.btn {
+	font-family: 'Montserrat', Arial, sans-serif;
+	padding: 10px 30px;
 	@include btn;
+
+
+	&--white {
+		background-color: $white;
+		color: $green;
+		border: 1px solid $white;
+
+		&:hover {
+			background-color: $white;
+			color: darken($green, 30%);
+			border: 1px solid darken($green, 30%);
+
+		}
+	}
+}
+
+.nav-link-cat {
+	font-family: 'Montserrat', Arial, sans-serif;
+	font-weight: bold;
+	line-height: 1;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 5px 0;
+}
+
+.text-extrabold {
+	font-weight: 800;
+}
+
+input {
+	&::placeholder {text-transform: uppercase;}
+	&:focus::placeholder {color: transparent}
+}
+
+
+.burger {
+	&:focus {outline: none;}
 }
 
 .ios-icon {
@@ -14,16 +77,15 @@ body {
 }
 
 .social-icon {
+	font-size: 18px;
 	margin: 0 7px;
-}
+	cursor: pointer;
+	@include transition;
 
-// @media screen and (min-width: 768px) {
-	.h-menu, .h-menu.collapsing{
-		position: absolute;
-		top: 50px;
-		right: 20px;
+	&:hover {
+		color: $green;
+		@include transition;
 	}
-// }
-
+}
 
 

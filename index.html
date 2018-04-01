@@ -9,15 +9,15 @@
 
 	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 
 </head>
 
-<body>
-	<header class="header">
-		<div class="container text-center">
+<body class="text-dark">
+	<header class="header header--index">
+		<div class="container text-center pt-4">
 			<nav class="navbar navbar-light">
-				<a class="header__brand navbar-brand" href="#">AKAD.</a>
+				<a class="text-dark header__brand navbar-brand" href="#">AKAD.</a>
 				<button class="burger navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<img src="icons/burger.svg" alt="Menu">
 				</button>
@@ -28,7 +28,7 @@
 							<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">About us</a>
+							<a class="nav-link" href="about.html">About us</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">Services</a>
@@ -46,10 +46,10 @@
 				</div>
 			</nav>
 
-			<div class="w-75 w-md-50 my-5 mx-auto text-uppercase">
-				<span class="bg-success">We're</span>
-				<h1 class="border mx-auto">Creative Agency</h1>
-				<p class="text-lowercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			<div class="col-12 col-md-7 col-lg-6 my-8 mx-auto">
+				<span class="text-uppercase bg-success montserrat index-pretitle">We're</span>
+				<h1 class="text-uppercase mx-auto index-title">Creative Agency</h1>
+				<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 				</p>
 			</div>
 
@@ -58,11 +58,11 @@
 					<img class="w-100" src="images/header-img.jpg" alt="">
 				</div>
 				<div class="col-12 col-md-6 offset-md-1 text-left">
-					<h1 class="text-uppercase">History of agency</h1>
+					<h2 class="">History of agency</h2>
 					<p class="">
 						Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.
 					</p>
-					<button class="btn rounded-0 btn-success d-block ml-auto text-uppercase px-4" type="button">Read more</button>
+					<button class="btn btn-success d-block ml-auto text-uppercase text-white px-5" type="button">Read more</button>
 				</div>
 			</div>
 		</div>
@@ -74,7 +74,7 @@
 			<div class="container">
 				<div class="row my-5">
 					<div class="col-12 col-md-8 offset-md-2 mb-5 text-center">
-						<h1 class="text-uppercase">Why choose us</h1>
+						<h2 class="">Why choose us</h2>
 						<p class="">
 							Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam.
 						</p>
@@ -139,7 +139,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-md-8 offset-md-2 mb-5 text-center">
-						<h1 class="text-uppercase">Our portfolio</h1>
+						<h2 class="">Our portfolio</h2>
 						<p class="">
 							Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam.
 						</p>
@@ -147,12 +147,12 @@
 
 					<div class="col-12 col-lg-3 mb-4 text-uppercase nav flex-lg-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 						<p class="h2 w-100">Choose category</p>
-						<a class="nav-link active" id="v-pills-all-tab" data-toggle="pill" href="#v-pills-all" role="tab" aria-controls="v-pills-all" aria-selected="true">All</a>
-						<a class="nav-link" id="v-pills-webdesign-tab" data-toggle="pill" href="#v-pills-webdesign" role="tab" aria-controls="v-pills-webdesign" aria-selected="false">Webdesign</a>
-						<a class="nav-link" id="v-pills-graphicdesign-tab" data-toggle="pill" href="#v-pills-graphicdesign" role="tab" aria-controls="v-pills-graphicdesign" aria-selected="false">Graphic design</a>
-						<a class="nav-link" id="v-pills-fashion-tab" data-toggle="pill" href="#v-pills-fashion" role="tab" aria-controls="v-pills-fashion" aria-selected="false">Fashion</a>
-						<a class="nav-link" id="v-pills-logodesign-tab" data-toggle="pill" href="#v-pills-logodesign" role="tab" aria-controls="v-pills-logodesign" aria-selected="false">Logo design</a>
-						<a class="nav-link" id="v-pills-advertising-tab" data-toggle="pill" href="#v-pills-advertising" role="tab" aria-controls="v-pills-advertising" aria-selected="false">Advertising</a>
+						<a class="nav-link nav-link-cat active" id="v-pills-all-tab" data-toggle="pill" href="#v-pills-all" role="tab" aria-controls="v-pills-all" aria-selected="true">All</a>
+						<a class="nav-link nav-link-cat" id="v-pills-webdesign-tab" data-toggle="pill" href="#v-pills-webdesign" role="tab" aria-controls="v-pills-webdesign" aria-selected="false">Webdesign</a>
+						<a class="nav-link nav-link-cat" id="v-pills-graphicdesign-tab" data-toggle="pill" href="#v-pills-graphicdesign" role="tab" aria-controls="v-pills-graphicdesign" aria-selected="false">Graphic design</a>
+						<a class="nav-link nav-link-cat" id="v-pills-fashion-tab" data-toggle="pill" href="#v-pills-fashion" role="tab" aria-controls="v-pills-fashion" aria-selected="false">Fashion</a>
+						<a class="nav-link nav-link-cat" id="v-pills-logodesign-tab" data-toggle="pill" href="#v-pills-logodesign" role="tab" aria-controls="v-pills-logodesign" aria-selected="false">Logo design</a>
+						<a class="nav-link nav-link-cat" id="v-pills-advertising-tab" data-toggle="pill" href="#v-pills-advertising" role="tab" aria-controls="v-pills-advertising" aria-selected="false">Advertising</a>
 					</div>
 
 					<div class="col-12 col-lg-9 tab-content" id="v-pills-tabContent">
@@ -252,22 +252,22 @@
 					</div>
 				</section>
 
-				<section class="contact bg-success py-5">
+				<section class="newsletter bg-success py-5">
 					<div class="container">
 						<div class="row">
 							<div class="col-12 col-md-6 text-uppercase text-white">
-								<p class="h1">Tou think we're cool? Let's work together</p>
-								<button class="btn rounded-0 bg-white text-success text-uppercase px-4 my-3" type="button">Get in touch</button>
+								<p class="h2">You think we're cool? Let's work together</p>
+								<button class="btn btn--white text-uppercase my-3" type="button">Get in touch</button>
 							</div>
 							<div class="col-12 col-md-6 bg-white p-4">
-								<p class="h3 text-uppercase">Stay informed with our newsletter</p>
+								<p class="h3 text-uppercase newsletter__title">Stay informed with our newsletter</p>
 								<p class="">
 									Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam.
 								</p>
 
-								<form class="form-inline mt-4">
-									<input type="email" class="form-control text-uppercase rounded-0 w-75" placeholder="Your email">
-									<button type="submit" class="btn btn-success text-uppercase rounded-0 w-25">Send</button>
+								<form class="row form-inline mt-4 mx-0">
+									<input type="email" class="col-9 form-control border-right-0" placeholder="Your email">
+									<button type="submit" class="col-3 btn btn-success text-white text-uppercase py-3">Send</button>
 								</form>
 							</div>
 						</div>
@@ -291,7 +291,7 @@
 								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">About us</a>
+								<a class="nav-link" href="about.html">About us</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#">Services</a>
@@ -310,7 +310,7 @@
 				</nav>
 
 				<div class="text-right d-inline-block">
-					<p class="text-uppercase">Created by Achouad 2016. All rights reserved</p>
+					<p class="text-uppercase">Created by <a href="https://s.dou.ua/storage-files/how-to-front-end.jpg" target="blank">Ann</a> 2016. All rights reserved</p>
 					<div class="footer__socials">
 						<i class="social-icon fab fa-facebook-f"></i>
 						<i class="social-icon fab fa-twitter"></i>

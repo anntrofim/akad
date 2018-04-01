@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans');
-
-
-// font-family: 'Montserrat', sans-serif;
-// font-family: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,700,800');
 
 @mixin transition {
 	transition: all .3s ease;
@@ -13,7 +9,7 @@
 	@include transition;
 
 	&:hover {
-
+		background-color: $green;
 		@include transition;
 	}
 	&:focus {

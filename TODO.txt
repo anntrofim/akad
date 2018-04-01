@@ -1,0 +1,5 @@
+- "we're" has margin?
+- hover effects for buttons
+- testimonials as carousel
+- change menu for mobile
+- 
