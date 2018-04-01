@@ -7445,9 +7445,22 @@ a.text-dark:hover, a.text-dark:focus {
 .breadcrumb {
   font-weight: 700; }
 
-.about-img-cont {
+.about-icon-cont {
   width: 40px;
-  height: 40px; }
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .about-icon-cont img {
+    width: 80%;
+    -webkit-filter: brightness(3);
+    filter: brightness(3); }
 
 .bar__row {
   background-color: #efeff0; }
@@ -7484,6 +7497,7 @@ a {
   -o-transition: all .3s ease;
   transition: all .3s ease; }
   a:hover {
+    color: #7beec7;
     text-decoration: none;
     -webkit-transition: all .3s ease;
     -o-transition: all .3s ease;
@@ -7493,8 +7507,18 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Montserrat', Arial, sans-serif; }
 
-h2 {
-  text-transform: uppercase; }
+.h2-span {
+  text-transform: uppercase;
+  position: relative; }
+  .h2-span:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -2px;
+    left: -3px;
+    width: 70px;
+    height: 20px;
+    background-color: #7beec7; }
 
 .btn {
   font-family: 'Montserrat', Arial, sans-serif;

@@ -25,6 +25,7 @@
 	@include transition;
 
 	&:hover {
+		color: $green;
 		text-decoration: none;
 		@include transition;
 	}
