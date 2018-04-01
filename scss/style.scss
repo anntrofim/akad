@@ -4,6 +4,7 @@
 @import "_name.scss";
 @import "_index.scss";
 @import "_about.scss";
+@import "_contact.scss";
 
 html{
 	font-size: 14px;
@@ -44,6 +45,7 @@ h1, h2, h3, h4, h5, h6,
 .btn {
 	font-family: 'Montserrat', Arial, sans-serif;
 	padding: 10px 30px;
+	text-transform: uppercase;
 	@include btn;
 
 
@@ -74,11 +76,14 @@ h1, h2, h3, h4, h5, h6,
 	font-weight: 800;
 }
 
-input {
-	&::placeholder {text-transform: uppercase;}
+input, textarea {
+	&::placeholder {text-transform: uppercase; font-weight: bold; color: #ccc;}
 	&:focus::placeholder {color: transparent}
 }
 
+textarea {
+	resize: none;
+}
 
 .burger {
 	&:focus {outline: none;}
@@ -98,6 +103,10 @@ input {
 		color: $green;
 		@include transition;
 	}
+}
+
+.breadcrumb {
+	font-weight: 700;
 }
 
 

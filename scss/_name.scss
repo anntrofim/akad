@@ -21,6 +21,7 @@ $spacers: map-merge((
 ), $spacers);
 
 $gray-600: #60606e;
+$gray-400: #ccc;
 $dark: $gray-600;
 
 
@@ -77,6 +78,7 @@ $component-active-bg:         $success;
 
 //
 //
+$input-placeholder-color:               $gray-400;
 
 
 
